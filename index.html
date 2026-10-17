@@ -598,6 +598,7 @@ svg text{font-family:var(--body)}
 const G = window.gsap;
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const anim = !!G && !reduce;
+if(G) G.ticker.lagSmoothing(0);
 const NS='http://www.w3.org/2000/svg';
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const slides=$$('.slide');
@@ -805,6 +806,7 @@ function go(n){
     tls[n]&&tls[n].revert();
     G.fromTo(inn,{x:130*dir,opacity:0,filter:'blur(14px)',scale:1.015},{x:0,opacity:1,filter:'blur(0px)',scale:1,duration:.95,delay:.22,ease:'power3.out',clearProps:'transform,filter'});
     tls[n]=buildEnter(n);
+    const tln=tls[n]; setTimeout(()=>{if(tln&&tls[n]===tln&&tln.progress()<1)tln.progress(1);},7000);
   }else{
     out.classList.remove('on');inn.classList.add('on');buildEnter(n);
   }
