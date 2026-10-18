@@ -187,6 +187,25 @@ svg text{font-family:var(--body)}
 .incl .wr div{display:flex;align-items:baseline;gap:10px}
 .incl .wr .num{font-size:48px}
 .incl .wr span{font-size:16px;color:var(--muted)}
+.why{display:grid;grid-template-columns:560px 1fr;gap:80px;height:100%;align-items:center}
+.why h2{font-size:46px}
+.why-big{display:flex;align-items:baseline;gap:6px;margin-top:34px}
+.why-big .num{font-size:140px;line-height:.95}
+.why-big .u{font-family:var(--display);font-size:80px;color:var(--orange);line-height:1}
+.why-cap{font-size:22px;color:var(--muted);margin-top:6px}
+.life{width:560px;height:auto;margin-top:34px;overflow:visible}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:52px 48px;align-content:center}
+.reasons .ben b{font-size:25px}
+.reasons .ben span{font-size:18.5px}
+.mecc{display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:18px;height:100%}
+#chain{width:100%;height:100%;overflow:visible}
+.diff{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.diff > div{padding:24px 32px 0 0;display:flex;flex-direction:column;gap:8px}
+.diff > div + div{padding-left:32px;border-left:1px solid var(--line)}
+.diff b{font-family:var(--display);font-weight:500;font-size:21px;color:var(--navy);line-height:1.25}
+.diff p{margin:0;font-size:17.5px;line-height:1.45;color:var(--muted)}
+.diff .hl .num{font-size:54px;line-height:1}
+.diff .hl .num small{font-size:24px;color:var(--orange);margin-left:6px}
 /* S7 */
 .s7{display:grid;grid-template-rows:auto 1fr auto;height:100%;gap:20px}
 .s7 h2{font-size:58px;max-width:15em}
@@ -290,6 +309,33 @@ svg text{font-family:var(--body)}
       </div>
     </div>
     <div class="speaker">Энэ санал агуулахын халаалтыг найдвартай байлгах, эрчим хүчний зардлыг урьдчилан тооцоолох боломжтой болгоход чиглэнэ. Халаалт өдөр, шөнөгүй ажилладаг тул эрчим хүч тасралтгүй хэрэгтэй.</div>
+  </section>
+
+  <!-- why solar -->
+  <section class="slide" data-label="Яагаад нарны систем" aria-label="Яагаад нарны систем">
+    <div class="why">
+      <div class="why-l">
+        <p class="eyebrow r">Яагаад нарны систем вэ?</p>
+        <h2 class="r">Монгол нартай орон. Тэр нарыг бизнесдээ ажиллуулаарай.</h2>
+        <div class="why-big r" data-d=".5"><span class="num count" data-to="250" data-d=".6">250</span><span class="u">+</span></div>
+        <div class="why-cap r" data-d=".7">нартай өдөр жилд</div>
+        <svg class="life" viewBox="0 0 560 96" aria-label="Ашиглалтын хугацаа">
+          <path class="draw" data-d="1.2" data-t="1.6" d="M10 40 H550" stroke="#0B2A4F" stroke-width="2" fill="none"/>
+          <path class="draw" data-d="1.4" data-t=".9" d="M10 40 H187" stroke="#2A5288" stroke-width="8" fill="none"/>
+          <path class="draw" data-d="1.6" data-t="1.4" d="M10 40 H550" stroke="#F2711C" stroke-width="3" fill="none" opacity=".0"/>
+          <g class="pop" data-d="1.3"><circle cx="10" cy="40" r="7" fill="#0B2A4F"/><text x="10" y="80" font-size="15" fill="#56667C">0</text></g>
+          <g class="pop" data-d="1.9"><circle cx="187" cy="40" r="7" fill="#2A5288"/><text x="187" y="22" font-size="15" text-anchor="middle" fill="#0B2A4F" font-weight="600">10 жил</text><text x="187" y="80" font-size="14" text-anchor="middle" fill="#56667C">батарейн баталгаа</text></g>
+          <g class="pop" data-d="2.4"><circle cx="550" cy="40" r="9" fill="#F2711C"/><text x="550" y="22" font-size="15" text-anchor="end" fill="#0B2A4F" font-weight="600">30 жил</text><text x="550" y="80" font-size="14" text-anchor="end" fill="#56667C">хавтангийн баталгаа</text></g>
+        </svg>
+      </div>
+      <div class="reasons">
+        <div class="ben r" data-d=".8"><svg viewBox="0 0 44 44" fill="none" stroke="#F2711C" stroke-width="2.5"><circle cx="22" cy="22" r="8"/><path d="M22 4 V9 M22 35 V40 M4 22 H9 M35 22 H40 M9 9 L12.5 12.5 M31.5 31.5 L35 35 M35 9 L31.5 12.5 M12.5 31.5 L9 35"/></svg><div><b>Нар үнэгүй</b><span>Нэг удаа хөрөнгө оруулаад 30 жил өөрийн цахилгаанаа үйлдвэрлэнэ. Тариф өссөн ч нарны үнэ өсдөггүй.</span></div></div>
+        <div class="ben r" data-d=".95"><svg viewBox="0 0 44 44" fill="none" stroke="#F2711C" stroke-width="2.5"><path d="M22 4 V40 M6 13 L38 31 M6 31 L38 13 M18 6 L22 10 L26 6 M18 38 L22 34 L26 38"/></svg><div><b>Хүйтэнд илүү үр ашигтай</b><span>Хавтан хүйтэнд сайн ажилладаг. Хоёр талт хавтан цасны тусгалаас 5–25% нэмэлт эрчим хүч авна.</span></div></div>
+        <div class="ben r" data-d="1.1"><svg viewBox="0 0 44 44" fill="none" stroke="#F2711C" stroke-width="2.5"><path d="M22 6 L36 12 V22 C36 31 29 37 22 39 C15 37 8 31 8 22 V12 Z M16 22 L20 26 L28 18"/></svg><div><b>Тасалдлаас хамгаална</b><span>Сүлжээ тасарсан ч батарей халаалтыг үргэлжлүүлнэ. Агуулах дахь бараа хамгаалагдана.</span></div></div>
+        <div class="ben r" data-d="1.25"><svg viewBox="0 0 44 44" fill="none" stroke="#F2711C" stroke-width="2.5"><path d="M10 34 C10 18 22 8 36 8 C36 22 26 34 10 34 Z M10 34 L24 20"/></svg><div><b>Цэвэр эрчим хүч</b><span>Монголын цахилгааны ихэнх нь нүүрсээр үйлдвэрлэгддэг. Нар утаа, ялгарлыг бууруулна.</span></div></div>
+      </div>
+    </div>
+    <div class="speaker">Монгол жилд 250 гаруй нартай өдөртэй. Нарны эрчим хүч үнэгүй, тарифын өсөлтөөс хамаарахгүй. Манай хоёр талт хавтан хүйтэн, цастай нөхцөлд илүү үр ашигтай ажиллаж, 30 жилийн баталгаатай. Сүлжээ тасарсан ч батарей халаалтыг үргэлжлүүлнэ.</div>
   </section>
 
   <!-- 2 -->
@@ -532,6 +578,58 @@ svg text{font-family:var(--body)}
     <div class="speaker">Өдөр нар халаалтыг тэжээж, шөнө батарей тэжээдэг тул сүлжээнээс авах цахилгаан мэдэгдэхүйц буурна. Сүлжээ тасрахад инвертер агшин зуур нөөцөд шилжинэ. Угсралтын зураг, хяналтын систем үнэд багтсан. Хэмнэлт, эргэн төлөгдөлтийн тооцоог тусдаа баримтаар танилцуулна.</div>
   </section>
 
+  <!-- why mecc -->
+  <section class="slide" data-label="Яагаад MECC" aria-label="Яагаад MECC">
+    <div class="mecc">
+      <div>
+        <p class="eyebrow r">Яагаад MECC вэ?</p>
+        <h2 class="r">Үйлдвэрээс таны агуулах хүртэл нэг баг.</h2>
+      </div>
+      <svg id="chain" viewBox="0 0 1380 300" aria-label="Захиалагч, MECC, үйлдвэрийн холбоо">
+        <path id="ch1" class="fp on draw" data-d=".5" d="M270 125 C 400 95, 470 95, 600 125"/>
+        <path id="ch2" class="fp on n draw" data-d=".6" d="M600 175 C 470 205, 400 205, 270 175"/>
+        <path id="ch3" class="fp on draw" data-d=".7" d="M780 125 C 910 95, 980 95, 1110 125"/>
+        <path id="ch4" class="fp on n draw" data-d=".8" d="M1110 175 C 980 205, 910 205, 780 175"/>
+        <g id="chParts"></g>
+        <text class="nsub r" data-d="1" x="435" y="82" text-anchor="middle">шаардлага →</text>
+        <text class="nsub r" data-d="1" x="435" y="232" text-anchor="middle">← шийдэл, дэмжлэг</text>
+        <text class="nsub r" data-d="1.1" x="945" y="82" text-anchor="middle">захиалга, тохиргоо →</text>
+        <text class="nsub r" data-d="1.1" x="945" y="232" text-anchor="middle">← тоног төхөөрөмж</text>
+        <g class="pop" data-d=".2">
+          <path d="M120 108 L180 70 L240 108" fill="none" stroke="#0B2A4F" stroke-width="3.5" stroke-linejoin="round"/>
+          <rect x="130" y="108" width="100" height="80" fill="#fff" stroke="#0B2A4F" stroke-width="3"/>
+          <rect x="146" y="140" width="40" height="30" fill="#FDEBDD" stroke="#F2711C" stroke-width="2"/>
+          <rect x="198" y="148" width="20" height="40" fill="#EEF2F6" stroke="#0B2A4F" stroke-width="2"/>
+          <text class="nlab" x="180" y="226" text-anchor="middle">Таны бизнес</text>
+          <text class="nsub" x="180" y="248" text-anchor="middle">агуулах, халаалт</text>
+        </g>
+        <g class="pop" data-d=".35">
+          <circle cx="690" cy="150" r="82" fill="#0B2A4F"/>
+          <circle cx="690" cy="150" r="98" fill="none" stroke="#F2711C" stroke-width="2" stroke-dasharray="4 8" id="mRing"/>
+          <circle cx="690" cy="104" r="10" fill="#F2711C"/>
+          <text x="690" y="160" text-anchor="middle" font-size="34" font-weight="700" fill="#fff" style="font-family:Unbounded,sans-serif">MECC</text>
+          <text x="690" y="186" text-anchor="middle" font-size="13" fill="#AFC2DC" style="font-family:JetBrains Mono,monospace;letter-spacing:.12em">MONGOLIA</text>
+          <text class="nlab" x="690" y="280" text-anchor="middle">Албан ёсны төлөөлөгч</text>
+        </g>
+        <g class="pop" data-d=".5">
+          <path d="M1140 188 V112 L1170 92 V112 L1200 92 V112 L1230 92 V112 L1260 92 V188 Z" fill="#fff" stroke="#0B2A4F" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M1150 92 V62 H1166 V100" fill="#fff" stroke="#0B2A4F" stroke-width="3"/>
+          <rect x="1158" y="132" width="22" height="18" fill="#2A5288"/><rect x="1190" y="132" width="22" height="18" fill="#2A5288"/><rect x="1222" y="132" width="22" height="18" fill="#2A5288"/>
+          <rect x="1188" y="160" width="26" height="28" fill="#FDEBDD" stroke="#F2711C" stroke-width="2"/>
+          <text class="nlab" x="1200" y="226" text-anchor="middle">MECC Solar үйлдвэр</text>
+          <text class="nsub" x="1200" y="248" text-anchor="middle">Ханжоу, Хятад</text>
+        </g>
+      </svg>
+      <div class="diff">
+        <div class="r" data-d="1.2"><b>Үйлдвэрлэгчтэй шууд холбоо</b><p>Тогтсон каталогоор хязгаарлагдахгүй. Хүчин чадал, тохиргоог үйлдвэрээс шууд захиална.</p></div>
+        <div class="r" data-d="1.3"><b>Шуурхай эргэх холбоо</b><p>Таны шаардлага, техникийн асуудал үйлдвэрт шууд хүрч, хурдан шийдэгдэнэ.</p></div>
+        <div class="r" data-d="1.4"><b>Чанар ба үнийн тэнцвэр</b><p>Үйлдвэрийн шууд үнээр, зах зээлд өрсөлдөхүйц өндөр чанартай тоног төхөөрөмж.</p></div>
+        <div class="r hl" data-d="1.5"><span class="num"><span class="count" data-to="125" data-d="1.6">125</span><small>kW</small></span><p>Завханд хэрэгжүүлсэн төсөл. Монголын уур амьсгал, логистикийг мэддэг орон нутгийн баг.</p></div>
+      </div>
+    </div>
+    <div class="speaker">MECC Solar Mongolia бол үйлдвэрлэгчийн Монгол дахь албан ёсны төлөөлөгч. Бид үйлдвэртэй шууд холбоотой тул тоног төхөөрөмжийг таны хэрэгцээнд тааруулж захиалж, асуудлыг шууд шийднэ. Үйлдвэрийн шууд үнээр чанартай тоног төхөөрөмж нийлүүлнэ. Бид зөвхөн зардаггүй, Завханд 125 kW төсөл хэрэгжүүлсэн орон нутгийн баг.</div>
+  </section>
+
   <!-- 7 -->
   <section class="slide" data-label="Дараагийн алхам" aria-label="Слайд 7">
     <div class="s7">
@@ -602,6 +700,7 @@ if(G) G.ticker.lagSmoothing(0);
 const NS='http://www.w3.org/2000/svg';
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const slides=$$('.slide');
+const IDX={};
 const N=slides.length;
 let cur=0, tls=[];
 const num=(v,d)=>v===undefined||v===''?d:parseFloat(v);
@@ -736,16 +835,35 @@ function drawParticles(t){
 }
 drawParticles(1200);
 
+
+/* ---------- MECC chain ---------- */
+IDX.flow=slides.indexOf($('#flow').closest('.slide'));
+IDX.dial=slides.indexOf($('#dial').closest('.slide'));
+IDX.sys=slides.indexOf($('.invest').closest('.slide'));
+IDX.chain=slides.indexOf($('#chain').closest('.slide'));
+const chP=['ch1','ch2','ch3','ch4'].map(id=>$('#'+id));
+const chL=chP.map(p=>p.getTotalLength());
+const chDots=chP.map((p,k)=>[0,1,2,3].map(()=>el('circle',{r:6,fill:k%2?'#2A5288':'#F2711C',opacity:0},$('#chParts'))));
+function drawChain(t){
+  chP.forEach((p,k)=>chDots[k].forEach((c,i)=>{
+    const q=((t*0.00032)+i/4+k*.13)%1, pt=p.getPointAtLength(q*chL[k]);
+    c.setAttribute('cx',pt.x);c.setAttribute('cy',pt.y);c.setAttribute('opacity',Math.min(1,Math.min(q,1-q)*8));
+  }));
+  const ring=$('#mRing'); if(ring) ring.setAttribute('transform',`rotate(${(t/60)%360} 690 150)`);
+}
+drawChain(900);
+
 /* ---------- loops ---------- */
 function loop(t){
-  if(cur===2&&anim)drawParticles(t);
-  if(cur===4&&anim)setDial((t/1000*24/22+13)%24);
+  if(cur===IDX.flow&&anim)drawParticles(t);
+  if(cur===IDX.dial&&anim)setDial((t/1000*24/22+13)%24);
+  if(cur===IDX.chain&&anim)drawChain(t);
   requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);
 
 /* ---------- world (sun / parallax) ---------- */
-const SUN=[[1300,800],[1500,840],[1560,60],[1560,60],[1560,880],[1560,880],[200,620],[1580,900]];
+const SUN=[[1300,800],[1560,60],[1500,840],[1560,60],[1560,60],[1560,880],[1560,880],[1560,880],[200,620],[1580,900]];
 const sun=$('#sun'), dots=$('#dots'), hor=$('#horizon');
 function world(i,inst){
   const [x,y]=SUN[i];
@@ -762,7 +880,7 @@ function world(i,inst){
 function counters(s){return $$('.count',s);}
 function buildEnter(i){
   const s=slides[i];
-  if(i===2)setMode('day');
+  if(i===IDX.flow)setMode('day');
   if(!anim)return null;
   const tl=G.timeline({delay:.3});
   $$('.r',s).forEach((e,k)=>tl.from(e,{y:24,opacity:0,filter:'blur(8px)',duration:.9,ease:'power3.out'},num(e.dataset.d,k*.09)));
@@ -788,7 +906,7 @@ slides.forEach((s,i)=>{const b=document.createElement('button');b.setAttribute('
 function hud(){
   $$('button',prog).forEach((b,i)=>{b.classList.toggle('done',i<cur);b.classList.toggle('cur',i===cur);});
   $('#ctr').textContent=String(cur+1).padStart(2,'0')+' / '+String(N).padStart(2,'0');
-  $('.foot').style.opacity=(cur===0||cur===3)?0:1;
+  $('.foot').style.opacity=(cur===0||cur===IDX.sys)?0:1;
   $('#sect').textContent=String(cur+1).padStart(2,'0')+' · '+slides[cur].dataset.label;
   $('#notesText').textContent=$('.speaker',slides[cur]).textContent;
   try{history.replaceState(null,'','#s'+(cur+1));}catch(e){}
